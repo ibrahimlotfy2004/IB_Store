@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cart_iBStore</title>
+</head>
+  <body>
+    <div class="header"> 
+      <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <button class="button" data-text="Awesome">
+                    <span class="actual-text">&nbsp;iBStore&nbsp;</span>
+                    <span aria-hidden="true" class="hover-text">&nbsp;iBStore&nbsp;</span>
+                </button>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Products</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                    <li>
+                        <a href="">Acount</a>
+                    </li>
+                </ul>                
+            </nav>
+            <a href="#" class=" menu_icon" onclick="menutoggle()">
+               <i class="fa-solid fa-bars"></i></a>
+        </div> 
+      </div>  
+    </div>       
+    </div>
+    <div class="small_container cart_page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Suptotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart_info">
+                        <img src="imgs/buy-1.jpg">
+                        <div>
+                           <p>Red Printed T-shirt</p>
+                           <small>Price: $75.00</small>
+                           <br>
+                           <a href="">Remove</a>
+                        </div>                        
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart_info">
+                        <img src="imgs/buy-2.jpg">
+                        <div>
+                           <p>Red Printed T-shirt</p>
+                           <small>Price: $50.00</small>
+                           <br>
+                           <a href="">Remove</a>
+                        </div>                        
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart_info">
+                        <img src="imgs/buy-3.jpg">
+                        <div>
+                           <p>Red Printed T-shirt</p>
+                           <small>Price: $60.00</small>
+                           <br>
+                           <a href="">Remove</a>
+                        </div>                        
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+        </table>
+        <div class="total_price">
+            <table>
+                <tr>
+                    <td>Suptotal</td>
+                    <td>$200.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$75.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$275.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer_col_1">
+                    <h3>Dwonload Our App</h3>
+                    <p>Download App For Android And Ios Mobile Phone</p>
+                    <div class="app_logo">
+                       <img src="imgs/play-store.png">
+                       <img src="imgs/app-store.png">
+                    </div>
+                </div>                
+                <div class="footer_col_2">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <a href="#"><li>Coupons</li></a>
+                        <a href="#"><li>Blog Pos</li></a>
+                        <a href="#"><li>Return Policy</li></a>
+                        <a href="#"><li>Join Affiliate</li></a>
+                    </ul>
+                </div>
+                <div class="footer_col_3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </ul>
+                </div>
+            </div>
+            <hr/>
+            <p class="copyright">Copyright 2018_2024 - Easy Tutorials</p>
+        </div>
+    </div> 
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+    
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+  </body>
+</html>
